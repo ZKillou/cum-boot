@@ -1,0 +1,24 @@
+{
+  "name": "cum-boot",
+  "version": "0.0.1",
+  "description": "a very useless discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZKillou/cum-boot.git"
+  },
+  "author": "creeper",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/ZKillou/cum-boot/issues"
+  },
+  "homepage": "https://github.com/ZKillou/cum-boot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0"
+  }
+}
