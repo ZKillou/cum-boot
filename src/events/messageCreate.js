@@ -22,6 +22,16 @@ module.exports = {
       return;
     }
 
+    if(command.permissionsUser && command.permissionsUser.length && !message.member.permissions.has(command.permissionsUser)) {
+      await message.reply("you don't have enough permissions");
+      return;
+    };
+
+    if(command.permissionsBot && command.permissionsBot.length && !message.guild.me.permissions.has(command.permissionsBot)) {
+      await message.reply("i don't have enough permissions (giv admin pls)");
+      return;
+    };
+
     try {
       await command.execute(client, message, args);
     } catch (error) {
