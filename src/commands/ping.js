@@ -10,6 +10,6 @@ module.exports = {
    * @param {Array<String>} args 
    */
   async execute(client, message, args){
-    await message.reply("pong :)")
+    await message.reply(`pong :) | ${client.ws.ping}ms `) //fuck you for not actually including the ping on a ping command.
   }
 };
