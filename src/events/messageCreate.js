@@ -1,4 +1,5 @@
 const { Client, Message } = require("discord.js");
+const quickreplies = require("../utils/quickreplies");
 
 module.exports = {
   /**
@@ -8,7 +9,7 @@ module.exports = {
   async execute(client, message) {
     // amongus secret reference
     if (message.author.bot) return;
-    if (message.content.toLowerCase().endsWith("quoi") || message.content.toLowerCase().endsWith("quoi ?")) message.reply("feur")
+    quickreplies(message)
     if (message.channel.type === "DM") return;
     if (!message.content.toLowerCase().startsWith(process.env.PREFIX)) return;
 
