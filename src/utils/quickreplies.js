@@ -5,7 +5,7 @@ const { Message } = require("discord.js");
  * @param {Message} message 
  */
 module.exports = function (message) {
-  const content = message.content
+  const content = message.content.toLowerCase()
 
   if(content.endsWith("quoi") || content.endsWith("quoi ?") || content.endsWith("quoi?") ||
   content.endsWith("what") || content.endsWith("what ?") || content.endsWith("what?")) {
