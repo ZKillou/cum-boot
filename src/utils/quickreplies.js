@@ -7,8 +7,8 @@ const { Message } = require("discord.js");
 module.exports = function (message) {
   const content = message.content.toLowerCase()
 
-  if(content.endsWith("quoi") || content.endsWith("quoi ?") || content.endsWith("quoi?") ||
-  content.endsWith("what") || content.endsWith("what ?") || content.endsWith("what?")) {
+  if(content.endsWith("quoi") || content.endsWith("quoi ?") || content.endsWith("quoi?") || content.endsWith("koi") || content.endsWith("koi ?") || content.endsWith("koi?") || 
+  content.endsWith("what") || content.endsWith("what ?") || content.endsWith("what?") || content.endsWith("wat") || content.endsWith("wat ?") || content.endsWith("wat?")) {
     let links = [
       "https://cdn.discordapp.com/attachments/827593601541865562/976860929855717386/caption.jpg",
       "https://cdn.discordapp.com/attachments/790552353119535104/977687447297200168/caption.png",
